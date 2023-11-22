@@ -6,7 +6,7 @@
 html{
     font-family: 'Lato';
     font-size: 62.5%;
-    background-color: rgba(0, 255, 17, 0.407);
+    background-color: #77dd77;
     color: antiquewhite;
     
 }
@@ -50,7 +50,18 @@ input{
     border: 2px solid white;
     background-color: transparent;
     padding: 30px;
+    transition: all 1s ease;
+}
+input::placeholder{
+    font-size: 2.5rem;
+}
+input:hover{
+    font-weight: 600;
+    background-color: #a9e9a4;
     
+}
+input:focus{
+    color: blueviolet;
 }
 
 button{
@@ -62,13 +73,13 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease;
     
 }
 button:hover{
     color: rgb(69, 68, 69);
     font-weight: 900;
-    background-color: rgb(209, 203, 209);
+    background-color: #a9e9a4;
 }
 
 .qrcode-area{
@@ -83,6 +94,6 @@ button:hover{
 #qrcode-gerado{
     width: 60%;
     height: 70%;
-    border: 2px solid white;
+    display: none;
 }
 
